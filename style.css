@@ -1,0 +1,181 @@
+/* apesar de ter escrito todo o código (com fontes de informação de sites como W3Schools, stackoverflow, reedit e youtube), o layout não é de minha autoria. Foi inspirado nesse aqui: https://br.freepik.com/vetores-premium/cv-curriculo-curriculo-modelo-de-design-vitae-para-desenvolvedor-web_16663880.htm
+/* atributos como padding e margin são utilizados para, respectivamente, definir espaçamentos entre outros conteúdos e a margem de uma div */
+/* os atributos width e height são utilizados para, respectivamente, definir a largura e altura de um conteúdo (no caso do nosso código, containers. "vh" significa "viewport height" e se refere a quanto espaço um container ocupará no sentido vertical, no caso 100% da altura da tela */
+/* utilizo a unidade de medida "rem" e "%" para tornar o site responsivo. Por exemplo, se um usuario utilizar uma fonte mais larga ou utilizar o navegador no modo janela, o site ficará igual ao de um usuario que utiliza uma fonte média e o navegador em modo tela cheia */
+/* atributos como "justify-content", "align-itens" e "text-align" são utilizados para alinhar e justificar elementos */
+/* o atributo "cursor:pointer" faz o cursor mudar quando passa por cima do elemento que o possui */
+/* elementos como "h2", "TXT", "hr" e "HR" serão repetidos mais de uma vez e possuirão o mesmo estilo, portanto, estilizo eles apenas uma vez e o estilo se aplicará pra qualquer elemento que posssuir essas tag */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  /* esse atributo faz a barra de rolagem "sumir" */
+}
+
+#container {
+    display: flex;  /* esse atributo permite alinhar os conteúdos que estarão dentro desse container lado a lado (no caso, temos outros 3 containers) */
+    height: 100vh;
+    width: 100%;
+    
+}
+
+h2 {
+    color:rgb(206, 203, 203);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.938rem;
+    padding-left: 5%;
+}
+
+.dadosPessoais {
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(7, 7, 90);
+    padding-top: 1%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bordaAzul {
+    width: 5%;
+    height: 100vh;
+    background-color: rgb(9, 165, 255);
+    border-top-right-radius:50px;
+    display: flex;
+}
+
+img {
+    width: 150px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: azure;
+}
+
+#nome {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.875rem;
+}
+
+#profissao {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(206, 203, 203);
+    font-size:1.25rem;
+    padding-right: 30px;
+}
+
+#gitIcon {
+    color:rgb(206, 203, 203);
+    font-size: 1.875rem;
+    cursor: pointer;
+    padding: 3%;
+}
+
+#linkIcon {
+    color:rgb(206, 203, 203);
+    font-size: 1.875rem;
+    cursor: pointer;
+    padding: 3%;
+}
+
+#whatsIcon {
+    color:rgb(206, 203, 203);
+    font-size: 30px;
+    cursor: pointer;
+    padding: 3%;
+}
+
+#emailIcon {
+    color:rgb(206, 203, 203);
+    font-size: 1.875rem;
+    cursor: pointer;
+    padding: 3%;
+}
+
+#locIcon {
+    color:rgb(206, 203, 203);
+    font-size: 1.875rem;
+    padding: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#locText {
+    color:rgb(206, 203, 203);
+    font-size: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.escolaridade {
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+}
+
+#educação {
+    color:rgb(206, 203, 203);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    padding-left: 5%;
+}
+
+hr {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#nomeInstituiçao {
+    color:rgb(206, 203, 203);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.938rem;
+    padding-left: 5%;
+}
+
+.habilidadesConhecimentos {
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+}
+
+#habilidades {
+    color:rgb(206, 203, 203);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    padding-left: 5%;
+}
+
+.linguas {
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+}
+
+#idiomas {
+    color:rgb(206, 203, 203);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    padding-left: 5%;
+}
+
+.informacoesProfissionais {
+    width: 45%;
+    height: 100vh;
+    padding-top: 100px;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    padding-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#TXT {
+    color: black;
+    padding-left: 0%;
+    font-size: 0.938rem;
+}
+
+#HR {
+    margin-left: 0;
+    margin-right: 1;
+}
